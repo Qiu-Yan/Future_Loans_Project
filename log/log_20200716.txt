@@ -1,0 +1,351 @@
+[INFO]2020-07-16 17:54:47,863-Test_01_Register.py-28: url:http://120.78.128.25:8766/futureloan/member/register, headers:{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 17:54:48,311-helper.py-94: 用户[13629023391]注册成功!
+[INFO]2020-07-16 17:54:48,311-Test_02_Login.py-33: http://120.78.128.25:8766/futureloan/member/login, {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 17:54:48,871-Test_01_Register.py-62: 1,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '18672283148', 'pwd': '12345678', 'type': '', 'reg_name': None}
+[INFO]2020-07-16 17:54:48,871-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 17:54:48,873-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 294, 'reg_name': '小柠檬', 'mobile_phone': '18672283148'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:49,589-Test_01_Register.py-93: user_info:{'id': 294, 'reg_name': '小柠檬', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobile_phone': '18672283148', 'type': 1, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 17, 54, 49)}
+
+[INFO]2020-07-16 17:54:50,137-Test_01_Register.py-62: 2,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '15714393988', 'pwd': '12345678', 'type': None, 'reg_name': ''}
+[INFO]2020-07-16 17:54:50,138-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 17:54:50,138-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 295, 'reg_name': '', 'mobile_phone': '15714393988'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:51,307-Test_01_Register.py-62: 3,post,注册成功,密码16位,type0,昵称10位,{'mobile_phone': '15249003196', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是个柠檬精啊柠檬精'}
+[INFO]2020-07-16 17:54:51,307-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '我是个柠檬精啊柠檬精', 'type': 0, 'leave_amount': 0.0}}
+[INFO]2020-07-16 17:54:51,307-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 296, 'reg_name': '我是个柠檬精啊柠檬精', 'mobile_phone': '15249003196'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:51,989-Test_01_Register.py-93: user_info:{'id': 296, 'reg_name': '我是个柠檬精啊柠檬精', 'pwd': '8FD4C5D685671525E8C0591D466A2EC3', 'mobile_phone': '15249003196', 'type': 0, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 17, 54, 51)}
+
+[INFO]2020-07-16 17:54:52,293-Test_01_Register.py-62: 4,post,电话号码已注册,{'mobile_phone': '15249003196', 'pwd': '12345678'}
+[INFO]2020-07-16 17:54:52,293-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:52,293-Test_01_Register.py-64: result:{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:53,143-Test_01_Register.py-62: 5,post,电话号码为空,{'mobile_phone': '', 'pwd': '12345678'}
+[INFO]2020-07-16 17:54:53,143-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 17:54:53,143-Test_01_Register.py-64: result:{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:54,244-Test_01_Register.py-62: 6,post,密码7位,{'mobile_phone': '13734022943', 'pwd': '1234567'}
+[INFO]2020-07-16 17:54:54,245-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:54,245-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:55,341-Test_01_Register.py-62: 7,post,密码17位,{'mobile_phone': '13164770493', 'pwd': '12345678901234567'}
+[INFO]2020-07-16 17:54:55,341-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:55,341-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:56,412-Test_01_Register.py-62: 8,post,密码为空,{'mobile_phone': '15804342199', 'pwd': None}
+[INFO]2020-07-16 17:54:56,412-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 17:54:56,412-Test_01_Register.py-64: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:57,522-Test_01_Register.py-62: 9,post,type为3,{'mobile_phone': '18575377445', 'pwd': '12345678', 'type': 3}
+[INFO]2020-07-16 17:54:57,523-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:57,523-Test_01_Register.py-64: result:{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:58,597-Test_01_Register.py-62: 10,post,type为字符串,{'mobile_phone': '15141149708', 'pwd': '12345678', 'type': 's'}
+[INFO]2020-07-16 17:54:58,597-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:58,598-Test_01_Register.py-64: result:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:54:59,681-Test_01_Register.py-62: 11,post,昵称11位,{'mobile_phone': '15601825752', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是1个柠檬精啊柠檬精'}
+[INFO]2020-07-16 17:54:59,681-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 17:54:59,681-Test_01_Register.py-64: result:{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:55:00,705-Test_02_Login.py-67: 1,post,登录成功,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 17:55:00,706-Test_02_Login.py-68: expected:{'code': 0}
+[INFO]2020-07-16 17:55:00,706-Test_02_Login.py-69: result:{'code': 0, 'msg': 'OK', 'data': {'id': 293, 'leave_amount': 0.0, 'mobile_phone': '13629023391', 'reg_name': '小柠檬', 'reg_time': '2020-07-16 17:54:48.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-07-16 18:00:01', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjI5MywiZXhwIjoxNTk0ODkzNjAxfQ.05XbOZ0oK3yXGXmWtaMBHXBEUv3IcwQPBTOpRok9ggyzfNIFCwyEQJnLw5aawr939f8Qx72DTKz9MyZV382Ssw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:55:01,601-Test_02_Login.py-67: 2,post,电话号码空,{'mobile_phone': None, 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 17:55:01,601-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 17:55:01,601-Test_02_Login.py-69: result:{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:55:02,473-Test_02_Login.py-67: 3,post,密码空,{'mobile_phone': '13629023391', 'pwd': ''}
+[INFO]2020-07-16 17:55:02,473-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 17:55:02,473-Test_02_Login.py-69: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:55:03,304-Test_02_Login.py-67: 4,post,错误密码,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?w'}
+[INFO]2020-07-16 17:55:03,305-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 17:55:03,305-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 17:55:04,373-Test_02_Login.py-67: 5,post,错误电话号码,{'mobile_phone': '15249003196', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 17:55:04,373-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 17:55:04,374-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:31,478-Test_01_Register.py-28: url:http://120.78.128.25:8766/futureloan/member/register, headers:{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 22:56:31,832-Test_02_Login.py-33: http://120.78.128.25:8766/futureloan/member/login, {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 22:56:32,386-Test_01_Register.py-62: 1,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '18839541141', 'pwd': '12345678', 'type': '', 'reg_name': None}
+[INFO]2020-07-16 22:56:32,386-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 22:56:32,386-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 422, 'reg_name': '小柠檬', 'mobile_phone': '18839541141'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:33,051-Test_01_Register.py-93: user_info:{'id': 422, 'reg_name': '小柠檬', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobile_phone': '18839541141', 'type': 1, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 22, 56, 32)}
+
+[INFO]2020-07-16 22:56:33,592-Test_01_Register.py-62: 2,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '15398177692', 'pwd': '12345678', 'type': None, 'reg_name': ''}
+[INFO]2020-07-16 22:56:33,593-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 22:56:33,593-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 423, 'reg_name': '', 'mobile_phone': '15398177692'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:34,669-Test_01_Register.py-62: 3,post,注册成功,密码16位,type0,昵称10位,{'mobile_phone': '13781134708', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是个柠檬精啊柠檬精'}
+[INFO]2020-07-16 22:56:34,669-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '我是个柠檬精啊柠檬精', 'type': 0, 'leave_amount': 0.0}}
+[INFO]2020-07-16 22:56:34,669-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 424, 'reg_name': '我是个柠檬精啊柠檬精', 'mobile_phone': '13781134708'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:35,348-Test_01_Register.py-93: user_info:{'id': 424, 'reg_name': '我是个柠檬精啊柠檬精', 'pwd': '8FD4C5D685671525E8C0591D466A2EC3', 'mobile_phone': '13781134708', 'type': 0, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 22, 56, 34)}
+
+[INFO]2020-07-16 22:56:35,603-Test_01_Register.py-62: 4,post,电话号码已注册,{'mobile_phone': '13781134708', 'pwd': '12345678'}
+[INFO]2020-07-16 22:56:35,603-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:35,604-Test_01_Register.py-64: result:{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:36,420-Test_01_Register.py-62: 5,post,电话号码为空,{'mobile_phone': '', 'pwd': '12345678'}
+[INFO]2020-07-16 22:56:36,420-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 22:56:36,420-Test_01_Register.py-64: result:{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:37,586-Test_01_Register.py-62: 6,post,密码7位,{'mobile_phone': '13325849417', 'pwd': '1234567'}
+[INFO]2020-07-16 22:56:37,587-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:37,587-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:38,690-Test_01_Register.py-62: 7,post,密码17位,{'mobile_phone': '15662246545', 'pwd': '12345678901234567'}
+[INFO]2020-07-16 22:56:38,691-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:38,691-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:39,788-Test_01_Register.py-62: 8,post,密码为空,{'mobile_phone': '18715307179', 'pwd': None}
+[INFO]2020-07-16 22:56:39,788-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 22:56:39,788-Test_01_Register.py-64: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:40,908-Test_01_Register.py-62: 9,post,type为3,{'mobile_phone': '15984228432', 'pwd': '12345678', 'type': 3}
+[INFO]2020-07-16 22:56:40,908-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:40,908-Test_01_Register.py-64: result:{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:42,006-Test_01_Register.py-62: 10,post,type为字符串,{'mobile_phone': '18590973939', 'pwd': '12345678', 'type': 's'}
+[INFO]2020-07-16 22:56:42,006-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:42,007-Test_01_Register.py-64: result:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:43,112-Test_01_Register.py-62: 11,post,昵称11位,{'mobile_phone': '18558305714', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是1个柠檬精啊柠檬精'}
+[INFO]2020-07-16 22:56:43,113-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 22:56:43,113-Test_01_Register.py-64: result:{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:44,130-Test_02_Login.py-67: 1,post,登录成功,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 22:56:44,131-Test_02_Login.py-68: expected:{'code': 0}
+[INFO]2020-07-16 22:56:44,131-Test_02_Login.py-69: result:{'code': 0, 'msg': 'OK', 'data': {'id': 293, 'leave_amount': 0.0, 'mobile_phone': '13629023391', 'reg_name': '小柠檬', 'reg_time': '2020-07-16 17:54:48.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-07-16 23:01:44', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjI5MywiZXhwIjoxNTk0OTExNzA0fQ.3hoTHT4XhePLbd02Ea4bWwCM7Y6CPUrhoh2vmUhBVOPkHC34K9t16VHdOxIYwbTtn1eI4RSymHPUjpf-BsG1jg'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:45,111-Test_02_Login.py-67: 2,post,电话号码空,{'mobile_phone': None, 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 22:56:45,111-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 22:56:45,111-Test_02_Login.py-69: result:{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:45,953-Test_02_Login.py-67: 3,post,密码空,{'mobile_phone': '13629023391', 'pwd': ''}
+[INFO]2020-07-16 22:56:45,953-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 22:56:45,953-Test_02_Login.py-69: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:46,790-Test_02_Login.py-67: 4,post,错误密码,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?w'}
+[INFO]2020-07-16 22:56:46,790-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 22:56:46,790-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 22:56:47,689-Test_02_Login.py-67: 5,post,错误电话号码,{'mobile_phone': '13781134708', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 22:56:47,690-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 22:56:47,690-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:13,932-Test_01_Register.py-28: url:http://120.78.128.25:8766/futureloan/member/register, headers:{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:00:14,281-Test_02_Login.py-33: http://120.78.128.25:8766/futureloan/member/login, {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:00:15,419-Test_01_Register.py-62: 1,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '13692773523', 'pwd': '12345678', 'type': '', 'reg_name': None}
+[INFO]2020-07-16 23:00:15,419-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:00:15,419-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 426, 'reg_name': '小柠檬', 'mobile_phone': '13692773523'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:16,131-Test_01_Register.py-93: user_info:{'id': 426, 'reg_name': '小柠檬', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobile_phone': '13692773523', 'type': 1, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 0, 15)}
+
+[INFO]2020-07-16 23:00:16,679-Test_01_Register.py-62: 2,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '13159371456', 'pwd': '12345678', 'type': None, 'reg_name': ''}
+[INFO]2020-07-16 23:00:16,680-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:00:16,680-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 427, 'reg_name': '', 'mobile_phone': '13159371456'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:17,811-Test_01_Register.py-62: 3,post,注册成功,密码16位,type0,昵称10位,{'mobile_phone': '13671504916', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:00:17,811-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '我是个柠檬精啊柠檬精', 'type': 0, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:00:17,811-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 428, 'reg_name': '我是个柠檬精啊柠檬精', 'mobile_phone': '13671504916'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:18,521-Test_01_Register.py-93: user_info:{'id': 428, 'reg_name': '我是个柠檬精啊柠檬精', 'pwd': '8FD4C5D685671525E8C0591D466A2EC3', 'mobile_phone': '13671504916', 'type': 0, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 0, 18)}
+
+[INFO]2020-07-16 23:00:18,794-Test_01_Register.py-62: 4,post,电话号码已注册,{'mobile_phone': '13671504916', 'pwd': '12345678'}
+[INFO]2020-07-16 23:00:18,794-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:18,794-Test_01_Register.py-64: result:{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:19,638-Test_01_Register.py-62: 5,post,电话号码为空,{'mobile_phone': '', 'pwd': '12345678'}
+[INFO]2020-07-16 23:00:19,638-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:00:19,638-Test_01_Register.py-64: result:{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:20,762-Test_01_Register.py-62: 6,post,密码7位,{'mobile_phone': '13606165400', 'pwd': '1234567'}
+[INFO]2020-07-16 23:00:20,762-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:20,762-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:21,891-Test_01_Register.py-62: 7,post,密码17位,{'mobile_phone': '15216157470', 'pwd': '12345678901234567'}
+[INFO]2020-07-16 23:00:21,891-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:21,891-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:22,979-Test_01_Register.py-62: 8,post,密码为空,{'mobile_phone': '18589660566', 'pwd': None}
+[INFO]2020-07-16 23:00:22,979-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:00:22,980-Test_01_Register.py-64: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:24,105-Test_01_Register.py-62: 9,post,type为3,{'mobile_phone': '18895403197', 'pwd': '12345678', 'type': 3}
+[INFO]2020-07-16 23:00:24,105-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:24,105-Test_01_Register.py-64: result:{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:25,249-Test_01_Register.py-62: 10,post,type为字符串,{'mobile_phone': '13508739380', 'pwd': '12345678', 'type': 's'}
+[INFO]2020-07-16 23:00:25,249-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:25,249-Test_01_Register.py-64: result:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:26,456-Test_01_Register.py-62: 11,post,昵称11位,{'mobile_phone': '15630218376', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是1个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:00:26,456-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:00:26,456-Test_01_Register.py-64: result:{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:27,509-Test_02_Login.py-67: 1,post,登录成功,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:00:27,510-Test_02_Login.py-68: expected:{'code': 0}
+[INFO]2020-07-16 23:00:27,510-Test_02_Login.py-69: result:{'code': 0, 'msg': 'OK', 'data': {'id': 293, 'leave_amount': 0.0, 'mobile_phone': '13629023391', 'reg_name': '小柠檬', 'reg_time': '2020-07-16 17:54:48.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-07-16 23:05:27', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjI5MywiZXhwIjoxNTk0OTExOTI3fQ.I26SwJk4u7POUOSzfGwITF-qGdV6Tu1RK3pBQ9zbbKoQ_LcI9vmV9379E-49Z1Z56dOUawiEesHNZzLqY1RHeA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:28,464-Test_02_Login.py-67: 2,post,电话号码空,{'mobile_phone': None, 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:00:28,464-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:00:28,464-Test_02_Login.py-69: result:{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:29,327-Test_02_Login.py-67: 3,post,密码空,{'mobile_phone': '13629023391', 'pwd': ''}
+[INFO]2020-07-16 23:00:29,327-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:00:29,328-Test_02_Login.py-69: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:30,200-Test_02_Login.py-67: 4,post,错误密码,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?w'}
+[INFO]2020-07-16 23:00:30,201-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:00:30,201-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:00:31,118-Test_02_Login.py-67: 5,post,错误电话号码,{'mobile_phone': '13671504916', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:00:31,118-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:00:31,118-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:14,861-Test_01_Register.py-28: url:http://120.78.128.25:8766/futureloan/member/register, headers:{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:08:15,471-Test_02_Login.py-33: http://120.78.128.25:8766/futureloan/member/login, {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:08:16,607-Test_01_Register.py-62: 1,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '18590138474', 'pwd': '12345678', 'type': '', 'reg_name': None}
+[INFO]2020-07-16 23:08:16,607-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:16,608-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 437, 'reg_name': '小柠檬', 'mobile_phone': '18590138474'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:17,342-Test_01_Register.py-93: user_info:{'id': 437, 'reg_name': '小柠檬', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobile_phone': '18590138474', 'type': 1, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 8, 16)}
+
+[INFO]2020-07-16 23:08:17,930-Test_01_Register.py-62: 2,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '15232704073', 'pwd': '12345678', 'type': None, 'reg_name': ''}
+[INFO]2020-07-16 23:08:17,931-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:17,931-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 438, 'reg_name': '', 'mobile_phone': '15232704073'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:19,114-Test_01_Register.py-62: 3,post,注册成功,密码16位,type0,昵称10位,{'mobile_phone': '18669902704', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:08:19,114-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '我是个柠檬精啊柠檬精', 'type': 0, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:19,114-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 439, 'reg_name': '我是个柠檬精啊柠檬精', 'mobile_phone': '18669902704'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:19,880-Test_01_Register.py-93: user_info:{'id': 439, 'reg_name': '我是个柠檬精啊柠檬精', 'pwd': '8FD4C5D685671525E8C0591D466A2EC3', 'mobile_phone': '18669902704', 'type': 0, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 8, 19)}
+
+[INFO]2020-07-16 23:08:20,219-Test_01_Register.py-62: 4,post,电话号码已注册,{'mobile_phone': '18669902704', 'pwd': '12345678'}
+[INFO]2020-07-16 23:08:20,219-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:20,219-Test_01_Register.py-64: result:{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:21,270-Test_01_Register.py-62: 5,post,电话号码为空,{'mobile_phone': '', 'pwd': '12345678'}
+[INFO]2020-07-16 23:08:21,270-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:21,270-Test_01_Register.py-64: result:{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:22,464-Test_01_Register.py-62: 6,post,密码7位,{'mobile_phone': '13374873370', 'pwd': '1234567'}
+[INFO]2020-07-16 23:08:22,464-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:22,464-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:23,651-Test_01_Register.py-62: 7,post,密码17位,{'mobile_phone': '18713115855', 'pwd': '12345678901234567'}
+[INFO]2020-07-16 23:08:23,651-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:23,652-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:24,794-Test_01_Register.py-62: 8,post,密码为空,{'mobile_phone': '18153564701', 'pwd': None}
+[INFO]2020-07-16 23:08:24,795-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:24,795-Test_01_Register.py-64: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:26,612-Test_01_Register.py-62: 9,post,type为3,{'mobile_phone': '13740772763', 'pwd': '12345678', 'type': 3}
+[INFO]2020-07-16 23:08:26,612-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:26,612-Test_01_Register.py-64: result:{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:27,783-Test_01_Register.py-62: 10,post,type为字符串,{'mobile_phone': '15766194698', 'pwd': '12345678', 'type': 's'}
+[INFO]2020-07-16 23:08:27,784-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:27,784-Test_01_Register.py-64: result:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:28,979-Test_01_Register.py-62: 11,post,昵称11位,{'mobile_phone': '13676810752', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是1个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:08:28,980-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:28,980-Test_01_Register.py-64: result:{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:30,045-Test_02_Login.py-67: 1,post,登录成功,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:08:30,045-Test_02_Login.py-68: expected:{'code': 0}
+[INFO]2020-07-16 23:08:30,045-Test_02_Login.py-69: result:{'code': 0, 'msg': 'OK', 'data': {'id': 293, 'leave_amount': 0.0, 'mobile_phone': '13629023391', 'reg_name': '小柠檬', 'reg_time': '2020-07-16 17:54:48.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-07-16 23:13:30', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjI5MywiZXhwIjoxNTk0OTEyNDEwfQ.sqCueVGVaHMCVpdGBqGigBD7-6cNMncLwthaZvnjqsH0vhBCMWPAl_QZJbPvwisjPcrBlhny6GflOXMqdp7F0w'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:31,310-Test_02_Login.py-67: 2,post,电话号码空,{'mobile_phone': None, 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:08:31,311-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:31,311-Test_02_Login.py-69: result:{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:32,205-Test_02_Login.py-67: 3,post,密码空,{'mobile_phone': '13629023391', 'pwd': ''}
+[INFO]2020-07-16 23:08:32,205-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:32,205-Test_02_Login.py-69: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:33,095-Test_02_Login.py-67: 4,post,错误密码,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?w'}
+[INFO]2020-07-16 23:08:33,095-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:08:33,095-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:34,048-Test_02_Login.py-67: 5,post,错误电话号码,{'mobile_phone': '18669902704', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:08:34,048-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:08:34,048-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:43,109-Test_01_Register.py-28: url:http://120.78.128.25:8766/futureloan/member/register, headers:{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:08:43,473-Test_02_Login.py-33: http://120.78.128.25:8766/futureloan/member/login, {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+[INFO]2020-07-16 23:08:44,033-Test_01_Register.py-62: 1,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '18171439828', 'pwd': '12345678', 'type': '', 'reg_name': None}
+[INFO]2020-07-16 23:08:44,033-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:44,033-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 440, 'reg_name': '小柠檬', 'mobile_phone': '18171439828'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:44,773-Test_01_Register.py-93: user_info:{'id': 440, 'reg_name': '小柠檬', 'pwd': '25D55AD283AA400AF464C76D713C07AD', 'mobile_phone': '18171439828', 'type': 1, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 8, 44)}
+
+[INFO]2020-07-16 23:08:45,545-Test_01_Register.py-62: 2,post,注册成功,密码8位,类型,昵称为空,{'mobile_phone': '15563505012', 'pwd': '12345678', 'type': None, 'reg_name': ''}
+[INFO]2020-07-16 23:08:45,545-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '小柠檬', 'type': 1, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:45,545-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 441, 'reg_name': '', 'mobile_phone': '15563505012'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:46,858-Test_01_Register.py-62: 3,post,注册成功,密码16位,type0,昵称10位,{'mobile_phone': '18589633736', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:08:46,859-Test_01_Register.py-63: expected:{'code': 0, 'data': {'reg_name': '我是个柠檬精啊柠檬精', 'type': 0, 'leave_amount': 0.0}}
+[INFO]2020-07-16 23:08:46,859-Test_01_Register.py-64: result:{'code': 0, 'msg': 'OK', 'data': {'id': 442, 'reg_name': '我是个柠檬精啊柠檬精', 'mobile_phone': '18589633736'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:47,690-Test_01_Register.py-93: user_info:{'id': 442, 'reg_name': '我是个柠檬精啊柠檬精', 'pwd': '8FD4C5D685671525E8C0591D466A2EC3', 'mobile_phone': '18589633736', 'type': 0, 'leave_amount': Decimal('0.00'), 'reg_time': datetime.datetime(2020, 7, 16, 23, 8, 47)}
+
+[INFO]2020-07-16 23:08:47,962-Test_01_Register.py-62: 4,post,电话号码已注册,{'mobile_phone': '18589633736', 'pwd': '12345678'}
+[INFO]2020-07-16 23:08:47,962-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:47,962-Test_01_Register.py-64: result:{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:48,856-Test_01_Register.py-62: 5,post,电话号码为空,{'mobile_phone': '', 'pwd': '12345678'}
+[INFO]2020-07-16 23:08:48,856-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:48,857-Test_01_Register.py-64: result:{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:50,046-Test_01_Register.py-62: 6,post,密码7位,{'mobile_phone': '15392287119', 'pwd': '1234567'}
+[INFO]2020-07-16 23:08:50,046-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:50,046-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:51,687-Test_01_Register.py-62: 7,post,密码17位,{'mobile_phone': '13332560735', 'pwd': '12345678901234567'}
+[INFO]2020-07-16 23:08:51,687-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:51,688-Test_01_Register.py-64: result:{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:52,864-Test_01_Register.py-62: 8,post,密码为空,{'mobile_phone': '13746294449', 'pwd': None}
+[INFO]2020-07-16 23:08:52,864-Test_01_Register.py-63: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:52,864-Test_01_Register.py-64: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:54,075-Test_01_Register.py-62: 9,post,type为3,{'mobile_phone': '15592067863', 'pwd': '12345678', 'type': 3}
+[INFO]2020-07-16 23:08:54,075-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:54,076-Test_01_Register.py-64: result:{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:55,507-Test_01_Register.py-62: 10,post,type为字符串,{'mobile_phone': '18967333286', 'pwd': '12345678', 'type': 's'}
+[INFO]2020-07-16 23:08:55,507-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:55,508-Test_01_Register.py-64: result:{'code': 1004, 'msg': 'JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "s": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 60] (through reference chain: com.lemon.pojo.Member["type"])', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:56,891-Test_01_Register.py-62: 11,post,昵称11位,{'mobile_phone': '15813559617', 'pwd': '1234567890123sd?', 'type': 0, 'reg_name': '我是1个柠檬精啊柠檬精'}
+[INFO]2020-07-16 23:08:56,891-Test_01_Register.py-63: expected:{'code': 2, 'data': None}
+[INFO]2020-07-16 23:08:56,891-Test_01_Register.py-64: result:{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:57,969-Test_02_Login.py-67: 1,post,登录成功,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:08:57,969-Test_02_Login.py-68: expected:{'code': 0}
+[INFO]2020-07-16 23:08:57,969-Test_02_Login.py-69: result:{'code': 0, 'msg': 'OK', 'data': {'id': 293, 'leave_amount': 0.0, 'mobile_phone': '13629023391', 'reg_name': '小柠檬', 'reg_time': '2020-07-16 17:54:48.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-07-16 23:13:58', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjI5MywiZXhwIjoxNTk0OTEyNDM4fQ.KNeAWHDynEoHW3-Vd4C_N-D4krzLVelZWLAL_VB233e9nVO7i1plG1cBL45S0toy1c5Z2IAm_ylpn-A7ofH0Tw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:58,983-Test_02_Login.py-67: 2,post,电话号码空,{'mobile_phone': None, 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:08:58,983-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:58,984-Test_02_Login.py-69: result:{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:08:59,882-Test_02_Login.py-67: 3,post,密码空,{'mobile_phone': '13629023391', 'pwd': ''}
+[INFO]2020-07-16 23:08:59,882-Test_02_Login.py-68: expected:{'code': 1, 'data': None}
+[INFO]2020-07-16 23:08:59,882-Test_02_Login.py-69: result:{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:09:01,021-Test_02_Login.py-67: 4,post,错误密码,{'mobile_phone': '13629023391', 'pwd': 'Qy123456?w'}
+[INFO]2020-07-16 23:09:01,021-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:09:01,021-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
+[INFO]2020-07-16 23:09:02,042-Test_02_Login.py-67: 5,post,错误电话号码,{'mobile_phone': '18589633736', 'pwd': 'Qy123456?'}
+[INFO]2020-07-16 23:09:02,042-Test_02_Login.py-68: expected:{'code': 1001, 'data': None}
+[INFO]2020-07-16 23:09:02,042-Test_02_Login.py-69: result:{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+
