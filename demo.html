@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>    
+<html>    
+<head>    
+<meta charset="UTF-8">    
+<title>${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志</title>    
+<style>
+.list li {
+	line-height: 2;
+}
+</style>
+</head>    
+    
+<body leftmargin="8" marginwidth="0" topmargin="8" marginheight="4" offset="0">    
+    <table width="95%" cellpadding="0" cellspacing="0"  style="font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sans-serif">    
+        <tr>
+			<td>
+				<p>各位同事，大家好：</p><br/>
+				<p style="text-indent: 2em;">以下为${PROJECT_NAME }项目构建信息，详细测试报告见附件:</p><br/>
+				<p style="color: red; text-indent: 2em;">构建结果 - ${BUILD_STATUS}</p>
+				
+			</td>   
+			
+        </tr>    
+        <tr>    
+            <td><br />    
+            <b><font color="#0B610B">构建信息</font></b>    
+            <hr size="2" width="100%" align="center" /></td>    
+        </tr>    
+        <tr>    
+            <td>    
+                <ul class="list">    
+                    <li>项目名称 ： ${PROJECT_NAME}</li>    
+                    <li>构建编号 ： 第${BUILD_NUMBER}次构建</li>    
+                    <li>触发原因： ${CAUSE}</li>    
+                    <li>构建状态： ${BUILD_STATUS}</li>    
+                    <li>构建日志： <a href="${BUILD_URL}console">${BUILD_URL}console</a></li>    
+                    <li>构建  Url ： <a href="${BUILD_URL}">${BUILD_URL}</a></li>    
+                    <li>工作目录 ： <a href="${PROJECT_URL}ws">${PROJECT_URL}ws</a></li>    
+                    <li>项目  Url ： <a href="${PROJECT_URL}">${PROJECT_URL}</a></li>  
+                 </ul>    
+				 <p style="font-size:14px; text-indent: 2em;">本邮件由系统自动发出，无需回复！</p>
+            </td>    
+        </tr>    
+    </table>    
+</body>    
+</html>
